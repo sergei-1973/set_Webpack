@@ -1,4 +1,5 @@
-import { pow2, pow3, pow4 } from "./modules/math.mjs";
+import * as math from "./modules/math.mjs";
+import test, { func1, func2 } from "./modules/exprtDflt.mjs";
 
 function component(text) {
   const element = document.createElement("h1");
@@ -7,4 +8,13 @@ function component(text) {
 }
 document.body.prepend(component("Set Webpack"));
 
-console.log(pow2(2) + pow3(2) + pow4(2));
+let result = math.pow2(2) + math.pow3(2);
+console.log(result);
+
+let text = test();
+console.log(text);
+
+let res1 = func1();
+let res2 = func2();
+
+console.log(res1, res2);
