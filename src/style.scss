@@ -1,0 +1,16 @@
+$body-color: #5a5ae6;
+$use-color: #bba6e6;
+html {
+  background-color: $body-color;
+}
+body {
+  color: $use-color;
+  .secWeek:not(.btn) {
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+  }
+  .secWeek ul {
+    font-size: 22px;
+  }
+}
